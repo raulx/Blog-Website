@@ -1,0 +1,11 @@
+<%- include('header') -%> <%- include('navbar') -%>
+<div class="innerContainer">
+  <h1 class="title">Compose</h1>
+  <form action="/compose" method="post">
+    <p>Title</p>
+    <input type="text" name="title" autofocus />
+    <textarea id="w3review" name="w3review" rows="8" cols="50"> </textarea>
+    <button class="btn" name="blog">Post</button>
+  </form>
+</div>
+<%- include('footer') -%>
