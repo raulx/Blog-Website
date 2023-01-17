@@ -1,5 +1,5 @@
 <%- include('header') -%> <%- include('navbar') -%>
-<div class="container">
+<div class="innerContainer">
   <div class="title">
     <h1>Home</h1>
     <p>
@@ -12,5 +12,17 @@
       Mollitia tempora re
     </p>
   </div>
+  <% for(i=0;i< title.length;i++){%>
+  <div class="blogPost">
+    <h1><%= title[i] %></h1>
+    <form action="/fullContent" method="post">
+      <p>
+        <%= content[i].substring(0,100) %>...
+        <button class="readMore" name="data" value="<%= i %> " type="submit">
+          Read More
+        </button>
+      </p>
+    </form>
+  </div>
+  <% } %> <%- include('footer') -%>
 </div>
-<%- include('footer') -%>

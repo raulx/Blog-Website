@@ -91,3 +91,13 @@ a:hover{
     background-color: rgb(180, 175, 175);
 
 }
+
+.readMore{
+    border: none;
+    background-color: #fff;
+    color: rgb(107, 107, 236);
+  
+}
+.readMore:hover{
+    color: gray;
+}
